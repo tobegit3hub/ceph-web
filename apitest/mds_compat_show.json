@@ -1,0 +1,16 @@
+{
+    "status": "OK",
+    "output": {
+	"compat": {},
+	"ro_compat": {},
+	"incompat": {
+	    "feature_8": "no anchor table",
+	    "feature_2": "client writeable ranges",
+	    "feature_3": "default file layouts on dirs",
+	    "feature_1": "base v0.20",
+	    "feature_6": "dirfrag is stored in omap",
+	    "feature_4": "dir inode in separate object",
+	    "feature_5": "mds uses versioned encoding"
+	}
+    }
+}

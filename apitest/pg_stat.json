@@ -1,0 +1,17 @@
+{
+  "status": "OK",
+  "output": {
+    "num_pg_by_state": [
+      {
+        "num": 112,
+        "name": "active+clean"
+      }
+    ],
+    "num_pgs": 112,
+    "raw_bytes": 125891006464,
+    "num_bytes": 2810,
+    "version": 133,
+    "raw_bytes_used": 19532660736,
+    "raw_bytes_avail": 99939856384
+  }
+}

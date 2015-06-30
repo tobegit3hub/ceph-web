@@ -1,0 +1,31 @@
+{
+  "status": "OK",
+  "output": {
+    "nodes": [
+      {
+        "kb": 122940436,
+        "name": "osd.0",
+        "type_id": 0,
+        "reweight": 1.0,
+        "crush_weight": 1.0,
+        "utilization": 15.51306,
+        "depth": 2,
+        "kb_avail": 97600556,
+        "kb_used": 19071824,
+        "var": 1.0,
+        "type": "osd",
+        "id": 0
+      }
+    ],
+    "stray": [],
+    "summary": {
+      "total_kb": 122940436,
+      "dev": 0.0,
+      "max_var": 1.0,
+      "total_kb_avail": 97600556,
+      "min_var": 1.0,
+      "average_utilization": 15.51306,
+      "total_kb_used": 19071824
+    }
+  }
+}

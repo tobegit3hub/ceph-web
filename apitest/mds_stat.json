@@ -1,0 +1,62 @@
+{
+  "status": "OK",
+  "output": {
+    "mdsmap_first_committed": 1,
+    "mdsmap": {
+      "session_autoclose": 300,
+      "up": {
+        "mds_0": 4106
+      },
+      "last_failure_osd_epoch": 0,
+      "in": [
+        0
+      ],
+      "last_failure": 0,
+      "max_file_size": 1099511627776,
+      "tableserver": 0,
+      "metadata_pool": 2,
+      "failed": [],
+      "epoch": 4,
+      "flags": 0,
+      "max_mds": 1,
+      "compat": {
+        "compat": {},
+        "ro_compat": {},
+        "incompat": {
+          "feature_8": "no anchor table",
+          "feature_2": "client writeable ranges",
+          "feature_3": "default file layouts on dirs",
+          "feature_1": "base v0.20",
+          "feature_6": "dirfrag is stored in omap",
+          "feature_4": "dir inode in separate object",
+          "feature_5": "mds uses versioned encoding"
+        }
+      },
+      "data_pools": [
+        1
+      ],
+      "info": {
+        "gid_4106": {
+          "standby_for_rank": -1,
+          "export_targets": [],
+          "name": "0",
+          "incarnation": 1,
+          "state_seq": 2,
+          "state": "up:active",
+          "gid": 4106,
+          "rank": 0,
+          "standby_for_name": "",
+          "addr": "172.16.0.206:6804/410"
+        }
+      },
+      "fs_name": "cephfs",
+      "created": "2015-06-30 09:11:07.993442",
+      "enabled": true,
+      "modified": "2015-06-30 09:11:10.364130",
+      "session_timeout": 60,
+      "stopped": [],
+      "root": 0
+    },
+    "mdsmap_last_committed": 4
+  }
+}

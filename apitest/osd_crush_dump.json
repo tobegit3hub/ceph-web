@@ -1,0 +1,134 @@
+{
+  "status": "OK",
+  "output": {
+    "rules": [
+      {
+        "min_size": 1,
+        "rule_name": "replicated_ruleset",
+        "steps": [
+          {
+            "item_name": "default",
+            "item": -1,
+            "op": "take"
+          },
+          {
+            "num": 0,
+            "type": "osd",
+            "op": "choose_firstn"
+          },
+          {
+            "op": "emit"
+          }
+        ],
+        "ruleset": 0,
+        "type": 1,
+        "rule_id": 0,
+        "max_size": 10
+      }
+    ],
+    "tunables": {
+      "profile": "unknown",
+      "has_v3_rules": 0,
+      "has_v4_buckets": 0,
+      "choose_total_tries": 50,
+      "require_feature_tunables3": 0,
+      "legacy_tunables": 0,
+      "chooseleaf_descend_once": 1,
+      "allowed_bucket_algs": 22,
+      "choose_local_fallback_tries": 0,
+      "has_v2_rules": 0,
+      "straw_calc_version": 1,
+      "require_feature_tunables2": 1,
+      "optimal_tunables": 0,
+      "choose_local_tries": 0,
+      "chooseleaf_vary_r": 0,
+      "require_feature_tunables": 1
+    },
+    "buckets": [
+      {
+        "hash": "rjenkins1",
+        "name": "default",
+        "weight": 65536,
+        "type_id": 10,
+        "alg": "straw",
+        "type_name": "root",
+        "items": [
+          {
+            "id": -2,
+            "weight": 65536,
+            "pos": 0
+          }
+        ],
+        "id": -1
+      },
+      {
+        "hash": "rjenkins1",
+        "name": "sahara",
+        "weight": 65536,
+        "type_id": 1,
+        "alg": "straw",
+        "type_name": "host",
+        "items": [
+          {
+            "id": 0,
+            "weight": 65536,
+            "pos": 0
+          }
+        ],
+        "id": -2
+      }
+    ],
+    "types": [
+      {
+        "name": "osd",
+        "type_id": 0
+      },
+      {
+        "name": "host",
+        "type_id": 1
+      },
+      {
+        "name": "chassis",
+        "type_id": 2
+      },
+      {
+        "name": "rack",
+        "type_id": 3
+      },
+      {
+        "name": "row",
+        "type_id": 4
+      },
+      {
+        "name": "pdu",
+        "type_id": 5
+      },
+      {
+        "name": "pod",
+        "type_id": 6
+      },
+      {
+        "name": "room",
+        "type_id": 7
+      },
+      {
+        "name": "datacenter",
+        "type_id": 8
+      },
+      {
+        "name": "region",
+        "type_id": 9
+      },
+      {
+        "name": "root",
+        "type_id": 10
+      }
+    ],
+    "devices": [
+      {
+        "id": 0,
+        "name": "osd.0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+<component name="libraryTable">
+  <library name="GOPATH &lt;ceph-web&gt;">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../.." />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <excluded>
+      <root url="file://$PROJECT_DIR$/../../go-sql-driver/mysql/.git" />
+      <root url="file://$PROJECT_DIR$/../seagull/.git" />
+      <root url="file://$PROJECT_DIR$/../../astaxie/beego/.git" />
+      <root url="file://$PROJECT_DIR$/../../beego/bee/testdata" />
+      <root url="file://$PROJECT_DIR$/../seagull/Godeps/_workspace" />
+      <root url="file://$PROJECT_DIR$/../kube-hat/.git" />
+      <root url="file://$PROJECT_DIR$/../../howeyc/fsnotify/.git" />
+      <root url="file://$PROJECT_DIR$/../seagull/.idea" />
+      <root url="file://$PROJECT_DIR$/../../smartystreets/goconvey/.git" />
+      <root url="file://$PROJECT_DIR$/../../astaxie/beego/utils/testdata" />
+      <root url="file://$PROJECT_DIR$/../../lib/pq/.git" />
+      <root url="file://$PROJECT_DIR$/.idea" />
+      <root url="file://$PROJECT_DIR$/../../jtolds/gls/.git" />
+      <root url="file://$PROJECT_DIR$/../../runscripts/run/.git" />
+      <root url="file://$PROJECT_DIR$/../../smartystreets/assertions/.git" />
+      <root url="file://$PROJECT_DIR$/../../astaxie/bat/.git" />
+      <root url="file://$PROJECT_DIR$/../../beego/bee/.git" />
+      <root url="file://$PROJECT_DIR$/../cli/.git" />
+      <root url="file://$PROJECT_DIR$/.git" />
+      <root url="file://$PROJECT_DIR$" />
+    </excluded>
+  </library>
+</component>

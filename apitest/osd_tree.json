@@ -1,0 +1,39 @@
+{
+  "status": "OK",
+  "output": {
+    "nodes": [
+      {
+        "children": [
+          -2
+        ],
+        "type_id": 10,
+        "type": "root",
+        "id": -1,
+        "name": "default"
+      },
+      {
+        "children": [
+          0
+        ],
+        "type_id": 1,
+        "type": "host",
+        "id": -2,
+        "name": "sahara"
+      },
+      {
+        "status": "up",
+        "name": "osd.0",
+        "exists": 1,
+        "type_id": 0,
+        "reweight": 1.0,
+        "crush_weight": 1.0,
+        "primary_affinity": 1.0,
+        "depth": 2,
+        "type": "osd",
+        "id": 0
+      }
+    ],
+    "stray": []
+  }
+}
+

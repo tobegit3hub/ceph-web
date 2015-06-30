@@ -1,0 +1,42 @@
+{
+  "status": "OK",
+  "output": {
+    "auth_dump": [
+      {
+        "caps": {
+          "mds": "allow",
+          "mon": "allow profile mds",
+          "osd": "allow *"
+        },
+        "key": "AQAsXZJVMdM2CRAAQH9oe9Uki6znzsYjjlT6oQ==",
+        "entity": "mds.0"
+      },
+      {
+        "caps": {
+          "mon": "allow profile osd",
+          "osd": "allow *"
+        },
+        "key": "AQAoXZJVYx9eLxAAHUgf/YkhHdBA+kAU9QTgPw==",
+        "entity": "osd.0"
+      },
+      {
+        "auid": 0,
+        "caps": {
+          "mds": "allow",
+          "mon": "allow *",
+          "osd": "allow *"
+        },
+        "key": "AQAnXZJVlzhnDRAAZqLtOOzmyt2z0Vp5VHjWnQ==",
+        "entity": "client.admin"
+      },
+      {
+        "caps": {
+          "mon": "allow rw",
+          "osd": "allow rwx"
+        },
+        "key": "AQAsXZJVIoJBEhAAGdmjeFheNkJilh0SajpuAw==",
+        "entity": "client.radosgw.gateway"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "OK",
+  "output": {
+    "election_epoch": 2,
+    "monmap": {
+      "epoch": 1,
+      "mons": [
+        {
+          "name": "sahara",
+          "rank": 0,
+          "addr": "172.16.0.206:6789/0"
+        }
+      ],
+      "modified": "2015-06-30 09:11:03.232624",
+      "fsid": "c16b666a-f205-4ed5-935e-3a614e5f65f0",
+      "created": "2015-06-30 09:11:03.232624"
+    },
+    "quorum_leader_name": "sahara",
+    "quorum": [
+      0
+    ],
+    "quorum_names": [
+      "sahara"
+    ]
+  }
+}
+

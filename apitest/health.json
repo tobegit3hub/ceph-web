@@ -1,0 +1,37 @@
+{
+  "status": "OK",
+  "output": {
+    "detail": [],
+    "timechecks": {
+      "round_status": "finished",
+      "epoch": 2,
+      "round": 0
+    },
+    "health": {
+      "health_services": [
+        {
+          "mons": [
+            {
+              "last_updated": "2015-06-30 11:28:03.343213",
+              "name": "sahara",
+              "avail_percent": 79,
+              "kb_total": 122940436,
+              "kb_avail": 97603580,
+              "health": "HEALTH_OK",
+              "kb_used": 19068800,
+              "store_stats": {
+                "bytes_total": 3853457,
+                "bytes_log": 3852202,
+                "last_updated": "0.000000",
+                "bytes_misc": 1255,
+                "bytes_sst": 0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "overall_status": "HEALTH_OK",
+    "summary": []
+  }
+}
