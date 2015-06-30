@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<html ng-app="cephweb">
+  <head>
+    <title>Ceph Web</title>
+
+    <!-- JavaScript -->
+    <script src="static/bower_components/angular/angular.min.js"></script>
+    <script src="static/bower_components/angular-route/angular-route.min.js"></script>
+    <script src="static/bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="static/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="static/js/app.js"></script>
+    <script src="static/js/controllers.js"></script>
+    <script src="static/js/style.js"></script>
+  </head>
+
+  <body ng-controller="IndexController">
+    <h1>Start</h1>
+    <h2>{{foo}}<h2>
+    <h1>End</h1>
+
+    <div ng-view></div>
+  </body>
+</html>
