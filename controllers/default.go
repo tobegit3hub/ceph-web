@@ -12,6 +12,8 @@ type MainController struct {
 	beego.Controller
 }
 
+/* Use this tool to generate struct https://mholt.github.io/json-to-go/ */
+
 type Health struct {
 	Status string `json:"status"`
 	Output struct {
@@ -292,7 +294,7 @@ func (c *MainController) Get() {
 	}
 	c.Data["osdDf"] = osdDf
 
-	// Request auth list
+	// Request auth list(Not used yet)
 	/*
 		body = RequestJson(baseUrl + "/auth/list");
 		var authList AuthList
