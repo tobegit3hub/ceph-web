@@ -19,16 +19,19 @@
     <script src="static/bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
     <script src="static/js/style.js"></script>
 
-        <script>
-            $(document).ready(function() {
-                // This command is used to initialize some elements and make them work properly
-                $.material.init();
-            });
-        </script>
+    <script>
+        // Refer to http://fezvrasta.github.io/bootstrap-material-design/#getting-started
+        $(document).ready(function() {
+            // This command is used to initialize some elements and make them work properly
+            $.material.init();
+        });
+    </script>
 
   </head>
 
   <body>
+
+<!-- For more usage of bootstrap-material-design in https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html -->
 
 <!-- Nav bar -->
 <div class="navbar navbar-warning">
@@ -63,24 +66,32 @@
 
     <div class="container">
 
+
+<!-- Health card -->
 <div class="panel panel-primary">
     <div class="panel-heading">
         <h3 class="panel-title">Ceph Status</h3>
     </div>
     <div class="panel-body">
-        {{.health.Output.OverallStatus}}
+      <p><b>Overall status:</b> {{.health.Output.OverallStatus}}</p>
+      <p><b>Epoch:</b>  {{.health.Output.Timechecks.Epoch}}</p>
+      <p><b>Round status:</b>  {{.health.Output.Timechecks.RoundStatus}}</p>
     </div>
 </div>
 
-      <h1>OSD Disk Free</h1>
-      <h2>{{.osdDf.Output.Nodes}}</h2>
-
+<!-- OSD disk free card -->
 <div class="panel panel-success">
     <div class="panel-heading">
-        <h3 class="panel-title">Panel success</h3>
+        <h3 class="panel-title">OSD Disk Free</h3>
     </div>
     <div class="panel-body">
-        Panel content
+        <p><b>total_kb:</b> {{.osdDf.Output.Summary.TotalKb}}</p>
+        <p><b>dev:</b> {{.osdDf.Output.Summary.Dev}}</p>
+        <p><b>max_var:</b> {{.osdDf.Output.Summary.MaxVar}}</p>
+        <p><b>total_kb_avail:</b> {{.osdDf.Output.Summary.TotalKbAvail}}</p>
+        <p><b>min_var:</b> {{.osdDf.Output.Summary.MinVar}}</p>
+        <p><b>average_utilization:</b> {{.osdDf.Output.Summary.AverageUtilization}}</p>
+        <p><b>total_kb_used:</b> {{.osdDf.Output.Summary.TotalKbUsed}}</p>
     </div>
 </div>
 
@@ -126,6 +137,9 @@
 
       <h1>MDS Stat</h1>
       <h2>{{.mdsStat}}</h2>
+
+<div class="checkbox"><label><input type="checkbox"></label></div>
+
 
     </div><!-- End of container -->
 
