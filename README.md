@@ -14,8 +14,10 @@ Ceph-web is the management tool for ceph with full features.
 ## Installation
 
 ```
-docker run -d -p 8080:8080 tobegit3hub/ceph-web
+docker run -d --net=host tobegit3hub/ceph-web
 ```
+
+Please go to <http://127.0.0.1:8080> in the brower.
 
 ## Notice
 
