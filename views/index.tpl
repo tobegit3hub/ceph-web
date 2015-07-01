@@ -68,7 +68,12 @@
       <!-- Health card -->
       <div class="panel panel-primary">
           <div class="panel-heading">
-              <h3 class="panel-title">Ceph Status</h3>
+              <span class="panel-title">Ceph Status</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label>
+              </span> -->
           </div>
           <div class="panel-body">
             <p><b>Overall status:</b> {{.health.Output.OverallStatus}}</p>
@@ -80,7 +85,12 @@
       <!-- OSD disk free card -->
       <div class="panel panel-success">
           <div class="panel-heading">
-              <h3 class="panel-title">OSD Disk Free</h3>
+              <span class="panel-title">OSD Disk Free</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label>
+              </span> -->
           </div>
           <div class="panel-body">
               <p><b>Total disk(KB):</b> {{.osdDf.Output.Summary.TotalKb}}</p>
@@ -96,7 +106,12 @@
       <!-- Osd crush dump card -->
       <div class="panel panel-warning">
           <div class="panel-heading">
-              <h3 class="panel-title">OSD CRUSH Dump</h3>
+              <span class="panel-title">OSD CRUSH Dump</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label> -->
+              </span>
           </div>
           <div class="panel-body">
               <p><b>OSD Profile:</b> {{.osdCrushDump.Output.Tunables.Profile}}</p>
@@ -121,7 +136,12 @@
       <!-- Osd tree card -->
       <div class="panel panel-danger">
           <div class="panel-heading">
-              <h3 class="panel-title">OSD Tree</h3>
+              <span class="panel-title">OSD Tree</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label>
+              </span> -->
           </div>
           <div class="panel-body">
               <p><b>Status:</b> {{.osdTree.Status}}</p>
@@ -131,7 +151,12 @@
       <!-- Pg status card -->
       <div class="panel panel-info">
           <div class="panel-heading">
-              <h3 class="panel-title">PG Status</h3>
+              <span class="panel-title">PG Status</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label>
+              </span> -->
           </div>
           <div class="panel-body">
               <p><b>Num pgs:</b> {{.pgStat.Output.NumPgs}}</p>
@@ -146,7 +171,12 @@
       <!-- Mds status card -->
       <div class="panel panel-success">
           <div class="panel-heading">
-              <h3 class="panel-title">MDS Status</h3>
+              <span class="panel-title">MDS Status</span>
+              <!-- <span class="togglebutton">
+                <label>
+                  &nbsp; &nbsp; &nbsp;<input type="checkbox" checked="">
+                </label>
+              </span> -->
           </div>
           <div class="panel-body">
               <p><b>Fs name:</b> {{.mdsStat.Output.Mdsmap.FsName}}</p>
@@ -162,7 +192,7 @@
       <!-- All data is null, not used yet
       <div class="panel panel-primary">
           <div class="panel-heading">
-              <h3 class="panel-title">MDS Compat Show</h3>
+              <span class="panel-title">MDS Compat Show</span>
           </div>
           <div class="panel-body">
               <p><b>Compat:</b> {{.mdsCompatShow.Output.Compat}}</p>
